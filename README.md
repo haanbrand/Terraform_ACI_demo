@@ -1,6 +1,9 @@
 # Terraform and Cisco ACI demo
 Purpose of this is to bring up an ACI Fabric using Terraform and IaC
 
+**Terraform documentation:**
+ - https://registry.terraform.io/providers/CiscoDevNet/aci/latest
+
 **NOTE:**
 
 If the nodes (Leafs and Spines) are already registered to APIC, then please rename the "fabric_init.tf" file to "fabric_init.tf.ignore".

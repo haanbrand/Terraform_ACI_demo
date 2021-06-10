@@ -54,15 +54,6 @@ resource "aci_fabric_if_pol" "Speed_100G_AUTO_OFF" {
   name_alias  = "100G"
   speed       = "100G"
 }
-resource "aci_fabric_if_pol" "Speed_10G_AUTO_OFF" {
-  name        = "Speed_10G_AUTO_OFF"
-  description = "10Gbps Auto neg off"
-  annotation  = "annotation"
-  auto_neg    = "off"
-  fec_mode    = "inherit"
-  name_alias  = "10G"
-  speed       = "10G"
-}
 resource "aci_fabric_if_pol" "Speed_100G_AUTO_ON" {
   name        = "Speed_100G_AUTO_ON"
   description = "100Gbps Auto neg on"
@@ -77,6 +68,15 @@ resource "aci_fabric_if_pol" "Speed_10G_AUTO_ON" {
   description = "10Gbps Auto neg on"
   annotation  = "annotation"
   auto_neg    = "on"
+  fec_mode    = "inherit"
+  name_alias  = "10G"
+  speed       = "10G"
+}
+resource "aci_fabric_if_pol" "Speed_10G_AUTO_OFF" {
+  name        = "Speed_10G_AUTO_OFF"
+  description = "10Gbps Auto neg off"
+  annotation  = "annotation"
+  auto_neg    = "off"
   fec_mode    = "inherit"
   name_alias  = "10G"
   speed       = "10G"

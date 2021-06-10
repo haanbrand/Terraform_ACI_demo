@@ -2,6 +2,9 @@ variable "user" {
   description = "Login information"
   type        = map
   default     = {
+    #The below are all using the Cisco sandbox simulated ACI environment. Please take care
+    # and be mindfull of other users and the infra as this is a free service and should be respected.
+    #There are also better ways to keep usernames and passwords safe - documented in the Terraform world.
     username = "admin"
     password = "ciscopsdt"
     url      = "https://sandboxapicdc.cisco.com"
@@ -10,23 +13,37 @@ variable "user" {
 
 
 
-variable "vrf" {
+variable "vrf1" {
     type    = string
-    default = "DB-PROD-VRF"
+    default = "Production VRF"
 }
-variable "bd" {
+variable "vrf2" {
     type    = string
-    default = "DB-PROD-BD"
+    default = "Non Production VRF"
 }
+
+variable "bd1" {
+    type    = string
+    default = "Production BD"
+}
+variable "bd2" {
+    type    = string
+    default = "Non Production BD"
+}
+variable "bd3" {
+    type    = string
+    default = "Test Production BD"
+}
+
 variable "subnet1" {
     type    = string
-    default = "10.52.100.1/24"
+    default = "10.1.1.1/24"
 }
 variable "subnet2" {
     type    = string
-    default = "10.52.101.1/24"
+    default = "10.2.1.1/24"
 }
 variable "subnet3" {
     type    = string
-    default = "10.52.102.1/24"
+    default = "10.3.1.1/24"
 }
