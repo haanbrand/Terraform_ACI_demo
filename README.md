@@ -11,8 +11,21 @@ Please use this environment with due respect for the provider as well as other u
 
 So if you have your own ACI fabric to play on please change the URL and access details accordingly....
 
+**Starting out and Structure**
+For the ones that are starting out I have created folders with relevant introductory topics.
+For a complete (or near to anyways) Fabric plan the 'complete_scenario' folder will have more info.
+
+For a quick start:
+- Install Terraform
+- get the files (*.tf) into a folder
+- run 'terraform init' (This will initialize terraform for this IaC structure)
+- run 'terraform plan' (Will show the plan)
+- run 'terraform apply' (Will show the plan again and ask for confirmation before applying)
+
+*Note - when testing this on the Cisco ACI Sandbox environment please use 'terraform apply -parallelism=1'
+
 **Outstanding:**
-- L3Outs = 0% Complete
+- L3Outs: Something to come soon
 
 Done:
 - Bare metal connections - Done
@@ -20,7 +33,9 @@ Done:
 - BD's - Done
 - VRFS - Done
 - Tenant - Done
+- Misc Fabric Policies - Done
 
+**Specifics:**
 Profiles:
 - to be updated
 
