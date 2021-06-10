@@ -6,7 +6,10 @@ Purpose of this is to bring up an ACI Fabric using Terraform and IaC
 
 **NOTE:**
 
-If the nodes (Leafs and Spines) are already registered to APIC, then please rename the "fabric_init.tf" file to "fabric_init.tf.ignore".
+Because we make use of the Cisco sandbox ACI environment we can only simulate adding devices (Spines and Leafs) to the fabric.
+Please use this environment with due respect for the provider as well as other users on the system. That goes a long way...respect...just saying ;-)
+
+So if you have your own ACI fabric to play on please change the URL and access details accordingly....
 
 **Outstanding:**
 - L3Outs = 0% Complete

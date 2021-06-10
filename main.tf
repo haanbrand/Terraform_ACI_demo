@@ -107,7 +107,7 @@ resource "aci_subnet" "subnet_repl" {
 
 resource "aci_application_profile" "app_01" {
 	tenant_dn = aci_tenant.tenant01.id
-	name      = "Prod Application"
+	name      = "ProdApplication"
     description = "Example Application"
 }
 
@@ -154,7 +154,7 @@ resource "aci_application_epg" "epg_non_prod" {
 
 resource "aci_application_epg" "epg_repl" {
 	application_profile_dn = aci_application_profile.app_01.id
-	name                   = "Replication and Testing EPG"
+	name                   = "Replication_and_Testing_EPG"
 	relation_fv_rs_bd      = aci_bridge_domain.bd_repl.id
 	#relation_fv_rs_dom_att = ["${data.aci_vmm_domain.vds.id}"] 
 	#relation_fv_rs_prov    = ["${aci_contract.contract_epg1_epg2.name}"]
@@ -177,14 +177,14 @@ resource "aci_any" "vz_any_nonprod_vrf" {
 
 #======================================================VPC Explicit Protection Group====================================
 
-resource "aci_vpc_explicit_protection_group" "expl_prot_grp_101_102" {
-  name                              = "101_102-VPCG"
-  annotation                        = "tag_vpc"
-  switch1                           = "101"
-  switch2                           = "102"
-  vpc_domain_policy                 = "default"
-  vpc_explicit_protection_group_id  = "10"
-}
+# resource "aci_vpc_explicit_protection_group" "expl_prot_grp_101_102" {
+#   name                              = "101_102-VPCG"
+#   annotation                        = "tag_vpc"
+#   switch1                           = "101"
+#   switch2                           = "102"
+#   vpc_domain_policy                 = "default"
+#   vpc_explicit_protection_group_id  = "10"
+# }
 
 
 #=======================================PHYSICAL WORLD=======================================

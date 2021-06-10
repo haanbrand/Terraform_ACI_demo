@@ -15,24 +15,24 @@ variable "user" {
 
 variable "vrf1" {
     type    = string
-    default = "Production VRF"
+    default = "ProductionVRF"
 }
 variable "vrf2" {
     type    = string
-    default = "Non Production VRF"
+    default = "NonProductionVRF"
 }
 
 variable "bd1" {
     type    = string
-    default = "Production BD"
+    default = "ProductionBD"
 }
 variable "bd2" {
     type    = string
-    default = "Non Production BD"
+    default = "NonProductionBD"
 }
 variable "bd3" {
     type    = string
-    default = "Test Production BD"
+    default = "TestProductionBD"
 }
 
 variable "subnet1" {
