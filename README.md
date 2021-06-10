@@ -22,8 +22,7 @@ Done:
 - Tenant - Done
 
 Profiles:
-- CDC-201_202-LPRO
-- CDC-203_204-LPRO
+- to be updated
 
 Fabric Policies:
 - LACP_ACT
@@ -43,7 +42,7 @@ Fabric Policies:
 - LLDP_Disabled
 - MCP_Enabled
 
-Physical Domains|	VLAN POOL
-------------|----------------
-AZFW-PHYDOM	| AZFW-VLPOOL
-AZFW-PHYDOM	| AZFW-VLPOOL
+Physical Domains |	VLAN POOL | AAEP
+------------|----------------|---------------
+server01_phydom	| server01-VLPOOL | Servers-aaep
+????	| ????-VLPOOL | ???-aaep
