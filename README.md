@@ -12,6 +12,7 @@ Please use this environment with due respect for the provider as well as other u
 So if you have your own ACI fabric to play on please change the URL and access details accordingly....
 
 **Starting out and Structure**
+
 For the ones that are starting out I have created folders with relevant introductory topics.
 For a complete (or near to anyways) Fabric plan the 'complete_scenario' folder will have more info.
 
